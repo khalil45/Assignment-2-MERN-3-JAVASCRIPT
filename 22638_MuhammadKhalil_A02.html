@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern Assignment 2 Muhamamd Khalil Ref.22638</title>
+</head>
+<body>
+    <h1>Muhammad Khalil Ref.22638. Assignment 2 (MERN 3)</h1>
+    <script>
+ 
+//----------------------NOTE : PLEASE UN-COMMENT 1 QUESTION AT A TIME OTHERWISE IT WILL SHOW ERRORS, THANKS----------------------------
+
+// ----------------------------------QUESTION # 1------------------------------------------------        
+//         last =  function(array, n) {
+//   if (array == null) 
+//     return void 0;
+//   if (n == null) 
+//      return array[array.length - 1];
+//   return array.slice(Math.max(array.length - n, 0));  
+//   };
+// console.log(last([6,9, 1, 2, 7],3));
+// console.log(last([6,9, 1, 2, 7],4));
+// console.log(last([6,9, 1, 2, 7]));
+// console.log(last([],3));
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 2------------------------------------------------        
+// myName = ["My", "name", "is", "Khalil"];
+// console.log(myName.join(" "));
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 3------------------------------------------------        
+// const num =  window.prompt("Enter any Number To seperate Even pairs");
+// const str = num.toString();
+// console.log(str);
+// const result = [str[0]];
+// for(let i = 1; i<str.length;i++){
+//   if(str[i-1]%2===0 && str[i]%2===0){
+//     result.push('-',str[i]);
+//   }else{
+//     result.push(str[i]);
+//   }
+// }
+// console.log(result.join(''));
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 4------------------------------------------------        
+// var array=[1, 1, 3, 6, 2, 3, 8, 3, 7, 2, 4, 9, 3];
+// var frequent = 1;
+// var count = 0;
+// var item;
+// for (var i=0; i<array.length; i++)
+// {
+//         for (var j=i; j<array.length; j++)
+//         {
+//                 if (array[i] == array[j])
+//                  count++;
+//                 if (frequent<count)
+//                 {
+//                   frequent=count; 
+//                   item = array[i];
+//                 }
+//         }
+//         count=0;
+// }
+// console.log(item+" ( " +frequent +" times ) ") ;
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 5------------------------------------------------        
+// var array = [8, 4, 6, 7, 2, 1],
+//     Sum = 0;
+//     Product = 1;
+// for (var i = 0; i < array.length; i++) 
+//    {
+//     Sum += array[i];
+//     Product *= array[i];
+//     }
+// console.log('Sum is = '+Sum + ' & Product is =  ' +Product);
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 6------------------------------------------------        
+// function diff (arr1, arr2) {
+// var temp = [];
+// arr1 = arr1.toString().split(',').map(Number);
+// arr2 = arr2.toString().split(',').map(Number);
+// for (var i in arr1) {
+// if(arr2.indexOf(arr1[i]) === -1) temp.push(arr1[i]);
+// }
+// for(i in arr2) {
+// if(arr1.indexOf(arr2[i]) === -1) temp.push(arr2[i]);
+// }
+// return temp.sort((a,b) => a-b);
+// }
+// console.log(diff([1, 2, 3,4,5,6], [6, 2, 1, 10,11,15,17]));
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 7------------------------------------------------        
+// function getCombinations(chars) {
+//   var result = [];
+//   var f = function(prefix, chars) {
+//     for (var i = 0; i < chars.length; i++) {
+//       result.push(prefix + chars[i]);
+//       f(prefix + chars[i], chars.slice(i + 1));
+//     }
+//   }
+//   f('', chars);
+//   return result;
+// } 
+// console.log(getCombinations(["a","b","c"]));
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 8------------------------------------------------        
+// function randomNum(item)
+// {  
+// return item[Math.floor(Math.random()*item.length)]; 
+// }
+// var item = [78601,1122,3737, 4250, 5560];
+// console.log(randomNum(item));
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 9------------------------------------------------        
+// let arr = [ 20, 23, 23, 45, 78, 88 ];
+// let n = arr.length;
+// function arraySorted(arr, n)
+// {
+//     if (n == 1 || n == 0)
+//         return 1;
+//     if (arr[n - 1] < arr[n - 2])
+//         return 0;
+//     return arraySorted(arr, n - 1);
+// }
+// if (arraySorted(arr, n) != 0)
+//     console.log("Yes");
+// else
+// console.log("No");
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 10------------------------------------------------        
+// let p = 'Hello! My username name is 112233';
+// console.log(p.replace('1', '$'));
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 11------------------------------------------------        
+// const arr = [1,2,2,4,3,1,3];
+// const extractUnique = arr => {
+//    const res = [];
+//    for(let i = 0; i < arr.length; i++){
+//       if(arr.lastIndexOf(arr[i]) !== arr.indexOf(arr[i])){
+//          continue;
+//       };
+//       res.push(arr[i]);
+//    };
+//    return res;
+// };
+// console.log(extractUnique(arr));
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 12------------------------------------------------        
+// const vowelsAndConsonants = (str) => {
+//   const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//   var letters = str.split('');
+//   var vowelsFound = [], consonantsFound = [];
+
+//   for (var i in letters) {
+//       if (vowels.includes(letters[i])) {
+//           vowelsFound.push(letters[i]);
+//       } else {
+//           consonantsFound.push(letters[i]);
+//       }
+//   }
+//   console.log("Vowels : ", vowelsFound.join(""));
+//   console.log("<br> Consonants : ", consonantsFound.join(""));    
+// }
+// var str = "I am Muhammad Khalil";
+// vowelsAndConsonants(str);
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 13------------------------------------------------        
+// function SecondLargest(arr){
+//     let first = -1 , second = -1;
+//     for(let i = 0; i <= arr.length-1; i++){
+//         if(arr[i] > first){
+//             second = first;
+//             first = arr[i];
+//         }
+//         else if( arr[i] > second && arr[i] != first){
+//             second = arr[i];
+//         }
+//     }
+//     console.log("Second Largest Number in String is = "+second);
+// }
+// let arr = [10,39, 14, 7, 1, 5]
+// SecondLargest(arr);
+//------------------------------------------------------------------------------------------------
+ 
+// ----------------------------------QUESTION # 14------------------------------------------------        
+// const Name = prompt("Enter a Name: ");
+// const Numbers = prompt("Enter a NUmber: ");
+//     if (Numbers>35 && Numbers<=40)  
+//       console.log("Name : " +Name+ " <br> Total Marks : " +Numbers+" <br>  Grade : A");  
+//     else if (Numbers>30 && Numbers<=35)  
+//     console.log("Name : " +Name+  " <br>  Total Marks : " +Numbers+" <br>  Grade : B");          
+//     else if (Numbers>25 && Numbers<=30) 
+//     console.log("Name : " +Name+  " <br>  Total Marks : " +Numbers+" <br>  Grade  : C");     
+//     else if (Numbers>20 && Numbers<=25)     
+//     console.log("Name : " +Name+  " <br>  Total Marks : " +Numbers+" <br>  Grade  : E");   
+//     else if (Numbers>0 && Numbers<=20) 
+//     console.log("Name : " +Name+  " <br>  Total Marks : " +Numbers+" <br> Grade   : F");
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 15------------------------------------------------        
+// function getLetter(str){
+//     switch(str[0]){
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//             return 1;
+//         case 'b':
+//         case 'c':
+//         case 'd':
+//         case 'f':
+//         case 'g':
+//             return 2;
+//         case 'h':
+//         case 'j':
+//         case 'k':
+//         case 'l':
+//         case 'm':
+//             return 3;
+//         case 'v':
+//         case 'w':
+//         case 'x':
+//         case 'y':
+//         case 'z':
+//             return 4;    
+//     }
+// }
+// console.log("1st letter return:",getLetter(prompt("Enter any string")))
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 16------------------------------------------------        
+// function multiplyArray(arr){
+//     console.log("Given array:",arr)
+
+//    let newarr= arr.map((item)=>{
+//         if(item%2==0){
+//             return item*2
+//         }else{
+//             return item*3
+//         }
+//     });
+//     return newarr
+//   }
+
+//   let givenArray=[7,5,3,4,2,9]
+//   let newArray=multiplyArray(givenArray)
+//   console.log("New Array:",newArray)
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 17------------------------------------------------        
+// let operator = prompt('Enter Any operator ( +, -, *, / or % ): ');
+// let num1 = parseFloat(prompt('Enter First number = '));
+// let num2 = parseFloat(prompt('Enter Second number = '));
+// let result;
+// if (operator == '+') {
+//     result = num1 + num2;
+// }
+// else if (operator == '-') {
+//     result = num1 - num2;
+// }
+// else if (operator == '*') {
+//     result = num1 * num2;
+// }
+// else if (operator == '%') {
+//     result = num1 % num2;
+// }
+// else {
+//     result = num1 / num2;
+// }
+// console.log(`${num1} ${operator} ${num2} = ${result}`);  
+//------------------------------------------------------------------------------------------------
+
+// ----------------------------------QUESTION # 18------------------------------------------------        
+// let array =[9,5,3,2,2,6]
+//   console.log("Minimum number in Array = "+Math.min.apply(Math, array) );
+//   console.log("Maximum number in Array = "+Math.max.apply(Math, array) );
+//------------------------------------------------------------------------------------------------
+    
+// ----------------------------------QUESTION # 19------------------------------------------------        
+// let Array=[6,7,3,4,2]
+//   console.log("Original Array = "+Array)
+//   Array.splice(Array.length/2,0,5)
+//   console.log("Pushed element in the mid of array = "+Array);
+//------------------------------------------------------------------------------------------------
+
+
+// ----------------------------------QUESTION # 20------------------------------------------------        
+// function ratio(arr)
+// {     
+//     let len = arr.length;
+//     let positive = 0;
+//     let negative = 0;
+//     let zero = 0;
+ 
+//     for(let i = 0; i < len; i++)
+//     {
+//         if (arr[i] > 0)
+//         {
+//             positive++;
+//         }
+//         else if (arr[i] < 0)
+//         {
+//             negative++;
+//         }
+//         else if (arr[i] == 0)
+//         {
+//             zero++;
+//         }
+//     }
+ 
+//     console.log("Positive Count = "+(positive / len).toFixed(4) + " ");
+//     console.log("Negative Count = "+(negative / len).toFixed(4) + " ");
+//     console.log("Zero Count = "+(zero / len).toFixed(4));
+// }
+// let a = [ 7, -4, 5, 2, 0, -3 ];
+// ratio(a);
+ //------------------------------------------------------------------------------------------------
+
+
+    </script>
+</body>
+</html>
